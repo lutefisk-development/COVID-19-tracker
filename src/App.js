@@ -30,17 +30,12 @@ function App() {
         <h1>COVID-19 TRACKER</h1>
         <FormControl className="app__dropdown">
           <Select variant="outlined" value="abc">
-
+            <MenuItem value="worldwide">Worldwide</MenuItem>
             {
               countries.map(country => (
               <MenuItem value={country.value}>{country.name}</MenuItem>
               ))
             }
-
-            {/* <MenuItem value="worldwide">Worldwide</MenuItem>
-            <MenuItem value="worldwide">Option two</MenuItem>
-            <MenuItem value="worldwide">Option 3</MenuItem>
-            <MenuItem value="worldwide">YOOOOOO</MenuItem> */}
           </Select>
         </FormControl>
       </div>
