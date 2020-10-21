@@ -3,6 +3,7 @@ import {Card, CardContent, MenuItem, FormControl, Select } from '@material-ui/co
 import InfoBox from './components/InfoBox';
 import Map from './components/Map';
 import Table from './components/Table';
+import LineGraph from './components/LineGraph';
 import { sortData } from './util';
 import './styles/App.css';
 
@@ -59,8 +60,6 @@ function App() {
       });
   };
 
-  console.log(countryInfo);
-
   return (
     <div className="app">
       <div className="app__left">
@@ -104,6 +103,7 @@ function App() {
           <Table countries={tableData} />
 
           <h3>Worldwide new Cases</h3>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
